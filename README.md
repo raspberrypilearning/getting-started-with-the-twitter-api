@@ -1,8 +1,8 @@
-# Python and Twitter
+# Getting Started with the Twitter API
 
-Getting started with connecting to Twitter from Python using Twython
+A guide to connecting to Twitter from Python using Twython
 
-![Python and Twitter](cover.png)
+![Getting Started with the Twitter API](cover.png)
 
 ## Requirements
 
@@ -20,6 +20,6 @@ Unless otherwise specified, everything in this repository is covered by the foll
 
 [![Creative Commons Licence](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-***Python and Twitter*** by the [Raspberry Pi Foundation](https://www.raspberrypi.org/) is licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
+***Getting Started with the Twitter API*** by the [Raspberry Pi Foundation](https://www.raspberrypi.org/) is licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/raspberrypilearning/python-and-twitter
+Based on a work at https://github.com/raspberrypilearning/getting-started-with-the-twitter-api

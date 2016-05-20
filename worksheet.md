@@ -1,6 +1,6 @@
-# Python and Twitter
+# Getting Started with the Twitter API
 
-Getting started with connecting to Twitter from Python using Twython
+A guide to connecting to Twitter from Python using Twython
 
 ## Create a Twitter account
 
@@ -117,6 +117,59 @@ If you see an error, your API keys may be incorrect. Be sure to copy them exactl
 
 ![Twitter API Error](images/twitter-api-error.png)
 
+## Tweet random messages
+
+Now that we can send some text as a tweet, let's mix it up a bit.
+
+1. First, import the random module:
+
+    ```python
+    import random
+    ```
+
+    This module contains a `choice` function which takes a list and returns a single entry at random.
+
+1. Now create a list of messages like so:
+
+    ```python
+    messages = [
+        "Hello world",
+        "Hi there",
+        "What's up?",
+        "How's it going?",
+        "Have you been here before?",
+        "Get a hair cut!",
+    ]
+    ```
+
+1. Replace `message = "Hello world!"` with `message = random.choice(messages)`. This chooses a single item from the `messages` list at random.
+
+1. Run the code again two or more times to see different messages being tweeted at random.
+
+## Tweet a picture
+
+Now that the Twitter connection has been tested, try to upload a picture.
+
+1. Find a picture, copy it to your Raspberry Pi or download it from the Internet, and save it. Make a note of its location (something like `/home/pi/Downloads/image.jpg`).
+
+1. Modify the code accordingly:
+
+    ```python
+    message = "Hello world - here's a picture!"
+    with open('/home/pi/Downloads/image.jpg', 'rb') as photo:
+        twitter.update_status_with_media(status=message, media=photo)
+    ```
+
+    Make sure to specify the full path to the image correctly.
+
+    This opens the file and uses the `update_status_with_media()` function to upload the image, along with the tweet text.
+
+1. Run the code and see if it tweets the text and image together!
+
+    ![Tweet Image](images/tweet-image.png)
+
+To take this further, you could take your own pictures with the camera module and tweet those.
+
 ## Test the Twython Streamer
 
 Another feature of the Twython library is the ability to listen out for tweets containing a certain term. You can perform a particular action when a matching tweet is found.
@@ -172,5 +225,6 @@ Another feature of the Twython library is the ability to listen out for tweets c
 
 - Make a [Tweeting Babbage](https://www.raspberrypi.org/learning/tweeting-babbage/)
 - Make your own Twitter bot
+- Tweet some information from sensors from the Sense HAT or GPIO components
 - Use the Twitter Streamer to poll which terms are more popular than others
 - Make a Twitter-controlled robot
