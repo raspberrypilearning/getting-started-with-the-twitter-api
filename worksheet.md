@@ -1,6 +1,6 @@
-# Getting Started with the Twitter API
+# Getting started with the Twitter API
 
-A guide to connecting to Twitter from Python using Twython
+A guide to connecting to Twitter from Python using Twython.
 
 ## Create a Twitter account
 
@@ -20,7 +20,7 @@ You need to register your application with Twitter to get keys; these allow you 
 
     ![Create new app](images/create-new-app.png)
 
-1. Complete the application details form. You must enter an application name, description, and website (this can be `https://www.raspberrypi.org/` if you don't have one). Leave the Callback URL field blank and proceed.
+1. Complete the application details form. You must enter an application name, description, and website (this can be `https://www.raspberrypi.org/` if you don't have one). Leave the 'Callback URL' field blank and proceed.
 
     ![App details](images/app-details.png)
 
@@ -32,7 +32,7 @@ You need to register your application with Twitter to get keys; these allow you 
 
 1. Once you've clicked the **Create an Access Token** button, refresh the page and you'll see a new section beneath the **Application Settings** with your access token details.
 
-1. You should now be able to see your **Consumer key**, **Consumer secret**, **Access token**, and **Access token secret**. You'll need these four keys to connect to your Twitter account from your Python code. Don't share these keys with anyone as they can be used without the account's password. If you share your code online, make sure not to include these keys. If you ever accidentally share or publish these keys, you should regenerate the keys at [apps.twitter.com](https://apps.twitter.com).
+1. You should now be able to see your **Consumer key**, **Consumer secret**, **Access token**, and **Access token secret**. You'll need these four keys to connect to your Twitter account from your Python code. Don't share these keys with anyone, as they can be used without the account's password. If you share your code online, make sure not to include these keys. If you ever accidentally share or publish these keys, you should regenerate the keys at [apps.twitter.com](https://apps.twitter.com).
 
 ![Twitter keys](images/twitter-keys.png)
 
@@ -40,11 +40,11 @@ You need to register your application with Twitter to get keys; these allow you 
 
 You'll need to make sure your system date/time is set correctly in order to connect to Twitter.
 
-1. Check your Raspberry Pi's system time is correct. Usually it gets set from the Internet, but it may be set to the wrong timezone or may not have been set correctly. If it's correct, you can skip on to the next step.
+1. Check your Raspberry Pi's system time is correct. It's usually set from the internet, but it may be set to the wrong timezone or may not have been set correctly. If it's correct, you can skip to the next step.
 
 1. Set the timezone in the **Raspberry Pi Configuration Tool**.
 
-1. If the date/time is still wrong, open a Terminal window and enter the following command with the current time and date:
+1. If the date/time is still wrong, open a terminal window and enter the following command with the current time and date:
 
     ```bash
     sudo date -s "1 MAY 2016 12:00:00"
@@ -52,11 +52,11 @@ You'll need to make sure your system date/time is set correctly in order to conn
 
 ## Send a tweet from Python
 
-Now you have your API keys and your date/time is set correctly you're ready to send a tweet from Python!
+Now you have your API keys, and your date/time is set correctly, you're ready to send a tweet from Python!
 
-1. Open Python 3 from the application menu.
+1. Open Python 3 from the Programming menu.
 
-1. Create a new file and paste your API keys from [apps.twitter.com](https://apps.twitter.com) into variables like so:
+1. Create a new file and paste your API keys from [apps.twitter.com](https://apps.twitter.com) into variables, like so:
 
     ```python
     consumer_key        = 'ABCDEFGHIJKLKMNOPQRSTUVWXYZ'
@@ -73,7 +73,7 @@ Now you have your API keys and your date/time is set correctly you're ready to s
     from twython import Twython
     ```
 
-1. Also import the variables from `auth.py`:
+1. Also, import the variables from `auth.py`:
 
     ```python
     from auth import (
@@ -113,7 +113,7 @@ Now you have your API keys and your date/time is set correctly you're ready to s
 
 Note that sending multiple tweets with the exact same text are classed as duplicates and rejected by Twitter. If you want to test it again, try tweeting a different message.
 
-If you see an error, your API keys may be incorrect. Be sure to copy them exactly and check the spelling of the variables. You should also check that your Pi is connected to the Internet.
+If you see an error, your API keys may be incorrect. Be sure to copy them exactly and check the spelling of the variables. You should also check that your Pi is connected to the internet.
 
 ![Twitter API Error](images/twitter-api-error.png)
 
@@ -127,9 +127,9 @@ Now that we can send some text as a tweet, let's mix it up a bit.
     import random
     ```
 
-    This module contains a `choice` function which takes a list and returns a single entry at random.
+    This module contains a `choice` function, which takes a list and returns a single entry at random.
 
-1. Now create a list of messages like so:
+1. Now create a list of messages, like so:
 
     ```python
     messages = [
@@ -150,7 +150,7 @@ Now that we can send some text as a tweet, let's mix it up a bit.
 
 Now that the Twitter connection has been tested, try to upload a picture.
 
-1. Find a picture, copy it to your Raspberry Pi or download it from the Internet, and save it. Make a note of its location (something like `/home/pi/Downloads/image.jpg`).
+1. Find a picture, copy it to your Raspberry Pi or download it from the internet, and save it. Make a note of its location (something like `/home/pi/Downloads/image.jpg`).
 
 1. Modify the code accordingly:
 
@@ -180,7 +180,7 @@ Another feature of the Twython library is the ability to listen out for tweets c
     from twython import TwythonStreamer
     ```
 
-1. Also import the variables from `auth.py`:
+1. Also, import the variables from `auth.py`:
 
     ```python
     from auth import (
@@ -199,7 +199,7 @@ Another feature of the Twython library is the ability to listen out for tweets c
     class MyStreamer(TwythonStreamer):
     ```
 
-1. The original `TwythonStreamer` class has a method (function) called `on_success`. This is the code which is run when a matching tweet is found. A simple example is to simply print out the contents of a tweet found when we search the stream:
+1. The original `TwythonStreamer` class has a method (function) called `on_success`. This is the code which is run when a matching tweet is found. A simple example is to just print out the contents of a tweet found when we search the stream:
 
     ```python
     class MyStreamer(TwythonStreamer):
@@ -222,7 +222,7 @@ Another feature of the Twython library is the ability to listen out for tweets c
 
 1. When a tweet is found, it sends a collection of data about the tweet into the `on_success` method. `data` is a dictionary containing the tweet text, along with lots of metadata.
 
-1. Printing out `data['text']` just gives us the tweet text. Another example might be to print the username followed by the tweet text. Modify your streamer's `on_success` method to change the behaviour, for example:
+1. Printing out `data['text']` just gives us the tweet text. Another example might be to print the username, followed by the tweet text. Modify your streamer's `on_success` method to change the behaviour, for example:
 
     ```python
     class MyStreamer(TwythonStreamer):
@@ -239,5 +239,5 @@ Another feature of the Twython library is the ability to listen out for tweets c
 - Make your own Twitter bot
 - Tweet some information from sensors from the Sense HAT or GPIO components
 - Use the Sense HAT or GPIO components to light up lights or drive motors when a term is tweeted
-- Use the Twitter Streamer to poll which terms are more popular than others
+- Use the Twython Streamer to poll which terms are more popular than others
 - Make a Twitter-controlled robot
