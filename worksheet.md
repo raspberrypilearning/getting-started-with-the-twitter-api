@@ -208,9 +208,21 @@ Another feature of the Twython library is the ability to listen out for tweets c
                 print(data['text'])
     ```
 
-    Note that when a tweet is found, it sends a collection of data about the tweet into the `on_success` method. `data` is a dictionary containing the tweet text, along with lots of metadata.
+1. Underneath your `MyStreamer` class definition, add some code to create an instance of your own streamer, and use the status filter to start tracking a particular term, like `raspberry pi`:
 
-1. Printing out `data['text']` just gives us the tweet text. Another example might be to print the username followed by the tweet text:
+    ```python
+    stream = MyStreamer(
+        consumer_key,
+        consumer_secret,
+        access_token,
+        access_token_secret
+    )
+    stream.statuses.filter(track='raspberry pi')
+    ```
+
+1. When a tweet is found, it sends a collection of data about the tweet into the `on_success` method. `data` is a dictionary containing the tweet text, along with lots of metadata.
+
+1. Printing out `data['text']` just gives us the tweet text. Another example might be to print the username followed by the tweet text. Modify your streamer's `on_success` method to change the behaviour, for example:
 
     ```python
     class MyStreamer(TwythonStreamer):
@@ -226,5 +238,6 @@ Another feature of the Twython library is the ability to listen out for tweets c
 - Make a [Tweeting Babbage](https://www.raspberrypi.org/learning/tweeting-babbage/)
 - Make your own Twitter bot
 - Tweet some information from sensors from the Sense HAT or GPIO components
+- Use the Sense HAT or GPIO components to light up lights or drive motors when a term is tweeted
 - Use the Twitter Streamer to poll which terms are more popular than others
 - Make a Twitter-controlled robot
