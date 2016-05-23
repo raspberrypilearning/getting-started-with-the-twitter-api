@@ -1,1 +1,1 @@
-Learn to connect to Twitter from Python to send tweets, upload images and live stream tweets
+A guide to connecting to Twitter from Python using Twython
