@@ -6,7 +6,7 @@ You'll need to make sure you have the following packages installed to proceed wi
 
 You'll need to be online to install packages.
 
-First update and upgrade your system. Enter the following commands in to the terminal:
+First, update and upgrade your system. Enter the following commands into the terminal:
 
 ```bash
 sudo apt-get update
@@ -25,4 +25,4 @@ Test you have everything you need by entering the following commands:
 python3 -c "import twython"
 ```
 
-This should bring you back to the command prompt with no errors. If you get an error saying `No module named X` then check you entered the commands above correctly.
+This should bring you back to the command prompt with no errors. If you get an error saying `No module named X`, then check you entered the commands above correctly.
