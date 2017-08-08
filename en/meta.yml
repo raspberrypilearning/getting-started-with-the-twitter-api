@@ -15,7 +15,6 @@ site_areas: ''
 steps:
 - title: Introduction
 - title: What you will need
-- title: Getting started with the Twitter API
 - title: Create a Twitter account
 - title: Create a Twitter application
 - title: Set the system date/time
