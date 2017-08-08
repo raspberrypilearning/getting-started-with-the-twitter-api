@@ -4,6 +4,8 @@ You'll need to make sure you have the following packages installed to proceed wi
 
 - Twython for Python 3
 
+You'll also need a phone number to register for the Twitter API
+
 You'll need to be online to install packages.
 
 First, update and upgrade your system. Enter the following commands into the terminal:
