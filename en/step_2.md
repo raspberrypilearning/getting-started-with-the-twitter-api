@@ -1,7 +1,5 @@
 ## What you will need
 
-
-
 ### Software
 
 #### Software installation
@@ -32,3 +30,6 @@ python3 -c "import twython"
 ```
 
 This should bring you back to the command prompt with no errors. If you get an error saying `No module named X`, then check you entered the commands above correctly.
+
+### Other requirements
+- You will need access to a telephone number to register for the Twitter API
