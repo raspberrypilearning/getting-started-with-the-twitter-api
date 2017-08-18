@@ -2,7 +2,7 @@ title: Getting started with the Twitter API
 hero_image: images/banner.png
 description: A guide to connecting to Twitter from Python using Twython
 original_url: https://raspberrypi.org/learning/getting-started-with-the-twitter-api
-theme: red
+theme: blue
 duration: 2
 listed: true
 ingredient: false
