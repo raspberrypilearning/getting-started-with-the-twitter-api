@@ -16,7 +16,7 @@ You need to register your application with Twitter to get keys; these allow you 
 
 - Click the **Create your Twitter Application** button.
 
-You may receive an error _"You must add your mobile phone to your Twitter profile before creating an application."_, if so follow the instructions to add a mobile phone to your twitter profile.
+You may receive the error _"You must add your mobile phone to your Twitter profile before creating an application"_, if so follow the instructions to add a mobile phone to your twitter profile.
 
 The application details page will then appear, showing you all the information about your app.
 

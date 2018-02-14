@@ -13,7 +13,7 @@ Now that the Twitter connection has been tested, try to upload a picture.
 
     Make sure to specify the full path to the image correctly.
 
-- Upload your image to twitter and get the **media_id** which you will use when sending your tweet:
+- Upload your image to twitter and get the **media_id** which you will need to send your tweet:
 
     ```python
     response = twitter.upload_media(media=image)
@@ -62,3 +62,5 @@ media_id = [response['media_id']]
 twitter.update_status(status=message, media_ids=media_id)
 print("Tweeted: " + message)
 ```
+
+--- /collapse ---
