@@ -1,5 +1,6 @@
 ## What you will make
-A guide to connecting to Twitter from Python using Twython
+
+Python code which can send and receive tweets.
 
 ## What you will learn
  By following this guide, you will learn:

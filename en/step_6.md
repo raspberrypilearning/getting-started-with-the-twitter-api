@@ -32,7 +32,7 @@ Now you have your API keys, and your date/time is set correctly, you're ready to
     )
     ```
 
-    Save this file as `twitter.py`.
+Save this file as `twitter.py`.
 
 - Make a connection with the Twitter API using this set of keys:
 
@@ -53,7 +53,7 @@ Now you have your API keys, and your date/time is set correctly, you're ready to
     print("Tweeted: %s" % message)
     ```
 
-    This uses the API's `update_status()` function to send a tweet containing the text "Hello world!".
+This uses the API's `update_status()` function to send a tweet containing the text "Hello world!".
 
 - Now save (`Ctrl + S`) and run with `F5`. You should see the message "Tweeted: Hello world!". Go to your Twitter profile in a web browser to verify it was sent! This will be at `twitter.com/username`, where `username` is your Twitter account's username.
 
@@ -65,3 +65,31 @@ If you see an error, your API keys may be incorrect. Be sure to copy them exactl
 
 ![Twitter API Error](images/twitter-api-error.png)
 
+--- collapse ---
+
+---
+title: Completed code
+---
+
+```python
+from twython import Twython
+from auth import (
+    consumer_key,
+    consumer_secret,
+    access_token,
+    access_token_secret
+)
+
+twitter = Twython(
+    consumer_key,
+    consumer_secret,
+    access_token,
+    access_token_secret
+)
+
+message = "Hello World!"
+twitter.update_status(status=message)
+print("Tweeted: " + message)
+```
+
+--- /collapse ---
