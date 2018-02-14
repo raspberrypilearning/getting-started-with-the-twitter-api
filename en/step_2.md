@@ -1,5 +1,9 @@
 ## What you will need
 
+### Hardware
+
+- Raspberry Pi
+
 ### Software
 
 #### Software installation
