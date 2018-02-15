@@ -1,6 +1,6 @@
 ## What you will make
 
-Python code which can send and receive tweets.
+A Python program which can send and receive tweets.
 
 ## What you will learn
  By following this guide, you will learn:

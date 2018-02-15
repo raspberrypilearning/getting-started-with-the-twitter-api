@@ -15,7 +15,7 @@ twitter = Twython(
 
 message = "Hello World - here's a picture!"
 
-image = open('/home/pi/Downloads/image.jpg', 'rb')
+image = open('image.jpg', 'rb')
 response = twitter.upload_media(media=image)
 media_id = [response['media_id']]
 twitter.update_status(status=message, media_ids=media_id)

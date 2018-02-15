@@ -2,16 +2,16 @@
 
 Now that the Twitter connection has been tested, try to upload a picture.
 
-- Find a picture, copy it to your Raspberry Pi or download it from the internet, and save it. Make a note of its location (something like `/home/pi/Downloads/image.jpg`).
+- Find a picture, copy it to your computer or download it from the internet, and save it in the same directory as your program..
 
 - Modify the code accordingly to change the message and open your image:
 
     ```python
     message = "Hello world - here's a picture!"
-    image = open('/home/pi/Downloads/image.jpg', 'rb')
+    image = open('image.jpg', 'rb')
     ```
 
-    Make sure to specify the full path to the image correctly.
+    Make sure to change `image.jpg` to the name of your image file.
 
 - Upload your image to twitter and get the **media_id** which you will need to send your tweet:
 
@@ -56,7 +56,7 @@ twitter = Twython(
 
 message = "Hello World - here's a picture!"
 
-image = open('/home/pi/Downloads/image.jpg', 'rb')
+image = open('image.jpg', 'rb')
 response = twitter.upload_media(media=image)
 media_id = [response['media_id']]
 twitter.update_status(status=message, media_ids=media_id)

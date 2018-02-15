@@ -2,7 +2,7 @@
 
 Now you have your API keys, and your date/time is set correctly, you're ready to send a tweet from Python!
 
-- Open Python 3 from the Programming menu.
+- Open Python 3 IDLE.
 
 - Create a new file and paste your API keys from [apps.twitter.com](https://apps.twitter.com) into variables, like so:
 
