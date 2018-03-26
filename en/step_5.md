@@ -1,10 +1,8 @@
 ## Set the system date/time
 
-Your system date/time will be need to be set correctly in order to connect to Twitter.
+Your system's date/time will be need to be set correctly in order for you to connect to Twitter. On most operating systems, this information is pulled from the internet, but your system might might be set to manual or to the wrong time zone.
 
-For most operating systems it will be set from the internet, but it may be set to manual or the wrong timezone.
-
-If its correct you can skip to the next step.
+If your date and time are correct, you can skip to the next step.
 
 --- collapse ---
 
@@ -12,7 +10,7 @@ If its correct you can skip to the next step.
 title: Setting the time on a Raspberry Pi
 ---
 
-- Set the timezone in the **Raspberry Pi Configuration Tool**.
+- Set the time zone in the **Raspberry Pi Configuration Tool**.
 
 ![pi configuration](images/pi_configuration.PNG)
 
@@ -29,19 +27,19 @@ title: Setting the time on a Raspberry Pi
 title: Setting the time on Windows
 ---
 
-- Right-click on the time and date on the taskbar
+- Right-click on the time and date on the taskbar.
 
-- Select **Adjust date/time** from the Menu
+- Select **Adjust date/time** from the menu.
 
 ![windows set time](images/windows_set_time.PNG)
 
 --- /collapse ---
 
 ---
-title: Setting the time on MacOS
+title: Setting the time on macOS
 ---
 
-- Click Menu, System Preferences, Date and Time
+- Click on the Apple symbol in the top left-hand corner, and then on **System Preferences** > **Date and Time**.
 
 --- /collapse ---
 
