@@ -1,5 +1,6 @@
 ## What you will make
-A guide to connecting to Twitter from Python using Twython
+
+A Python program which can send and receive tweets.
 
 ## What you will learn
  By following this guide, you will learn:
@@ -11,6 +12,6 @@ A guide to connecting to Twitter from Python using Twython
 
 This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
-- [Apply abstraction and decomposition to solve more complex problems](https://www.raspberrypi.org/curriculum/programming/developer)
-- [Engage and share with the digital making community](https://www.raspberrypi.org/curriculum/community-and-sharing/creator)
+- [Can effectively combine functionality from multiple libraries or APIs and refer to documentation](https://curriculum.raspberrypi.org/programming/developer/)
+
 
