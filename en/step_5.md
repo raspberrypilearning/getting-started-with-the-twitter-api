@@ -35,6 +35,8 @@ title: Setting the time on Windows
 
 --- /collapse ---
 
+--- collapse ---
+
 ---
 title: Setting the time on macOS
 ---
