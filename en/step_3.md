@@ -28,17 +28,17 @@ title: How to complete the developer application
 
     ![screenshot of account details page](images/apply_developer3.png)
 
-- Provide details about your project and describe why you will be doing.
+- Provide details about your project and describe what you will be doing.
 
     ![screenshot of use case details page](images/apply_developer4.png)
 
-- Read and agree to the Terms of Service.
+- Read and agree to the *Terms of Service*.
 
     ![screenshot of terms of service page](images/apply_developer5.png)
 
 --- /collapse ---
 
-- Confirm your email address using the link sent to you.
+- An email will be sent to you asking to "Confirm your email address", use the link in the email to do so.
 
-- You will then need to wait for your application to be approved. **Note** - this can take some time, you can check the status of your application at [developer.twitter.com](https://developer.twitter.com).
+**Note** - You will then need to wait for your application to be approved, this can take some time, you can check the status of your application at [developer.twitter.com](https://developer.twitter.com).
 

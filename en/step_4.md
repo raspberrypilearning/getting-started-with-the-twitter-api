@@ -1,12 +1,12 @@
 ## Create a Twitter application
 
-After you developer account has been approved, you will need to register your application with Twitter to get keys; these allow you to access the Twitter account from Python using the Twitter API (Application Programming Interface).
+After your developer account has been approved, you will need to register your application with Twitter to get keys; these allow you to access the Twitter account from Python using the Twitter API (Application Programming Interface).
 
 - Go to [developer.twitter.com](https://developer.twitter.com), select **Apps** from the menu and click the **Create and App** button.
 
     ![screenshot of the apps page with the apps link in the menu and the create app button highlighted](images/create_app1.png)
 
-- Complete the application details form. You must enter an app name, description, website (this can be `https://www.raspberrypi.org/` if you don't have one) and some information about *how the app will be used*. You can leave the other fields blank and click **Create**.
+- Complete the application details form. You must enter an app name, description, website (this can be *https://www.raspberrypi.org/* if you don't have one) and some information about *how the app will be used*. You can leave the other fields blank and click **Create**.
 
     ![screenshot of the Create an App page](images/create_app2.png)
 
