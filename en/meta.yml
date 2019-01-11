@@ -18,7 +18,7 @@ last_tested: 2017-01-01
 steps: 
 - title: Introduction
 - title: What you will need
-- title: Create a Twitter account
+- title: Apply for a Twitter developer account
 - title: Create a Twitter application
 - title: Set the system date/time
 - title: Send a tweet from Python
