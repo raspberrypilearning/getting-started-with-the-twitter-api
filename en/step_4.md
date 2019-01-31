@@ -20,9 +20,9 @@ After your developer account has been approved, you need to register your applic
 
     ![screenshot of apps keys and tokens page with tab and create button selected](images/create_app4.png)
 
-- You should now see your **Consumer API key**, **Consumer API secret key**, **Access token**, and **Access token secret**. You need these four keys to connect to your Twitter account from your Python program. Don't share these keys with anyone, because they allow access to your Twitter account without your account password. 
+- You should now see your **Consumer API key**, **Consumer API secret key**, **Access token**, and **Access token secret**. You need these four keys to connect to your Twitter account from your Python program.
 
-If you share your code online, make sure not to include these keys. 
+**Don't share these keys with anyone**, because they allow access to your Twitter account without your account password. If you share your code online, make sure not to include these keys. 
 
 If you ever accidentally share or publish the keys, you should **regenerate** them at [developer.twitter.com](https://developer.twitter.com).
 
