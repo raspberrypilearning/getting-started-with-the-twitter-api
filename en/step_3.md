@@ -1,12 +1,12 @@
 ## Apply for a Twitter developer account
 
-If you don't already have a Twitter account, you'll need to create one before you can apply for a developer account.
+If you don't already have a Twitter account, you need to create one before you can apply for a developer account.
 
 - Create a Twitter account at [twitter.com](https://twitter.com).
 
     ![Create Twitter account](images/create-twitter.png)
 
-You might also want to upload a photo and fill out the bio.
+If you want to, you can upload a photo and fill out the bio.
 
 - Apply for a developer account at [developer.twitter.com](https://developer.twitter.com).
 
@@ -20,11 +20,11 @@ You might also want to upload a photo and fill out the bio.
 title: How to complete the developer application
 ---
 
-- Select the twitter account you wish to apply with.
+- Select the Twitter account you wish to apply with.
 
     ![screenshot of user profile page](images/apply_developer2.png)
 
-- Select whether you are requesting access for an organisation or yourself and confirm your primary country.
+- Indicate whether you are requesting access for an organisation or for yourself, and confirm your primary country.
 
     ![screenshot of account details page](images/apply_developer3.png)
 
@@ -32,13 +32,13 @@ title: How to complete the developer application
 
     ![screenshot of use case details page](images/apply_developer4.png)
 
-- Read and agree to the *Terms of Service*.
+- Read and agree to the **Terms of Service**.
 
     ![screenshot of terms of service page](images/apply_developer5.png)
 
 --- /collapse ---
 
-- An email will be sent to you asking to "Confirm your email address", use the link in the email to do so.
+- You will receive an email from Twitter asking you to **confirm your email address**; follow the link in the email to confirm.
 
-**Note** - You will then need to wait for your application to be approved, this can take some time, you can check the status of your application at [developer.twitter.com](https://developer.twitter.com).
+**Note**: once you confirm your email address, you need to wait for your application to be approved. This may take some time, and you can check the status of your application at [developer.twitter.com](https://developer.twitter.com).
 
