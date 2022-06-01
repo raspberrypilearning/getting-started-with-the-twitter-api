@@ -1,3 +1,4 @@
+---
 title: Getting started with the Twitter API
 hero_image: images/banner.png
 description: A guide to connecting to Twitter from Python using Twython
@@ -15,14 +16,18 @@ hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
 - title: Apply for a Twitter developer account
 - title: Create a Twitter application
+  completion:
+  - engaged
 - title: Set the system date/time
 - title: Send a tweet from Python
 - title: Tweet random messages
 - title: Tweet a picture
 - title: Test the Twython Streamer
+  completion:
+  - internal
 - title: What next?
